@@ -1,8 +1,12 @@
 package com.mysite.sbmission;
 
+import com.mysite.sbmission.answer.Answer;
+import com.mysite.sbmission.question.Question;
+import com.mysite.sbmission.question.QuestionRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,11 +16,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 @SpringBootTest
-class SbMissionApplicationTests {
+class SbbApplicationTests {
 
     @Autowired
     private QuestionRepository questionRepository;
 
+    @Transactional
     @Test
     void testJpa() {
         Optional<Question> oq = this.questionRepository.findById(2);

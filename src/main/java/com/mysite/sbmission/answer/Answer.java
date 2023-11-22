@@ -1,5 +1,6 @@
-package com.mysite.sbmission;
+package com.mysite.sbmission.answer;
 
+import com.mysite.sbmission.question.Question;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

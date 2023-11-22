@@ -1,4 +1,4 @@
-package com.mysite.sbmission;
+package com.mysite.sbmission.question;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
